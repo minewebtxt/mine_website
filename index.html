@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mine⭐ - Bot do Discord</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background: #0f0f1a;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .logo-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo-header img.logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+    }
+
+    .logo-header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-header img.beta {
+      height: 28px;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .button {
+      background: linear-gradient(135deg, #8e44ad, #a349a4);
+      border: none;
+      padding: 15px 40px;
+      border-radius: 30px;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(142, 68, 173, 0.5);
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: linear-gradient(135deg, #732d91, #9537a1);
+    }
+
+    .tabs {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .tab-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .tab-buttons button {
+      background-color: #1e1e2e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .tab-buttons button.active {
+      background-color: #8e44ad;
+    }
+
+    .tab-content {
+      background-color: #1a1a2d;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      color: #ddd;
+      display: none;
+      line-height: 1.6;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    h3, h4 {
+      color: #ffffff;
+      margin-top: 1.5em;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #444;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 500px) {
+      .logo-header h1 {
+        font-size: 1.8rem;
+      }
+
+      .logo-header img.logo {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-header">
+      <img src="bot-logo.png" alt="Logo do Bot" class="logo" />
+      <h1>Mine⭐ <img src="beta-badge.png" alt="Beta" class="beta" /></h1>
+    </div>
+    <p class="description">
+      Um bot divertido e útil para servidores de Minecraft e Discord. Personalize comandos, gerencie o chat e muito mais!
+    </p>
+    <a 
+      class="button" 
+      href="https://discord.com/oauth2/authorize?client_id=1380215212203835513&scope=bot%20applications.commands&permissions=2146958847" 
+      target="_blank">Adicionar ao Discord</a>
+
+    <div class="tabs">
+      <div class="tab-buttons">
+        <button class="active" data-tab="terms">Termos de Uso</button>
+        <button data-tab="privacy">Política de Privacidade</button>
+      </div>
+
+      <div id="terms" class="tab-content active">
+        <h3>📄 Termos de Uso – MineBot</h3>
+        <p><strong>Desenvolvido por Cubescape Studios</strong><br>
+        Última atualização: 04/06/2025</p>
+
+        <h4>1. Introdução</h4>
+        <p>Este documento define os termos e condições de uso do MineBot, um bot desenvolvido e mantido pela Cubescape Studios para uso na plataforma Discord. [...]</p>
+
+        <h4>2. Quem Pode Usar o Bot</h4>
+        <p>O uso do MineBot é permitido apenas para pessoas com 13 anos ou mais, [...]</p>
+
+        <h4>3. Uso Permitido</h4>
+        <p>Você tem permissão para utilizar o MineBot apenas de maneira pessoal e não comercial. [...]</p>
+
+        <h4>4. Dados e Privacidade</h4>
+        <p>O MineBot pode coletar informações técnicas mínimas, como IDs de usuários, servidores e comandos utilizados [...]</p>
+
+        <h4>5. Limitações e Responsabilidades</h4>
+        <p>A Cubescape Studios não garante que o MineBot funcionará de forma contínua ou livre de erros. [...]</p>
+
+        <h4>6. Propriedade Intelectual</h4>
+        <p>Todo o conteúdo relacionado ao MineBot — incluindo seu código, funcionalidades, identidade visual, nome e marca — pertence exclusivamente à Cubescape Studios. [...]</p>
+
+        <h4>7. Atualizações e Mudanças</h4>
+        <p>Podemos adicionar, remover ou modificar funcionalidades do MineBot a qualquer momento [...]</p>
+
+        <h4>8. Jurisdição e Restrições Legais</h4>
+        <p>O MineBot não é adequado para uso em contextos que exigem conformidade com regulamentações específicas [...]</p>
+
+        <h4>9. Contato</h4>
+        <p>🔗 (Em breve)</p>
+
+        <hr>
+
+        <h3>📄 Termos de Serviço – Mine⭐</h3>
+        <p>Última atualização: 04/06/2025 22:28</p>
+
+        <h4>✅ 1. Aceitação dos Termos</h4>
+        <p>Ao adicionar ou utilizar o Mine⭐ em um servidor do Discord, você declara estar de acordo com estes Termos de Serviço [...]</p>
+
+        <h4>👤 2. Elegibilidade</h4>
+        <p>Você deve ter idade mínima permitida pela política do Discord (geralmente 13 anos) [...]</p>
+
+        <h4>⚙️ 3. Funcionamento do Bot</h4>
+        <p>O Mine⭐ oferece comandos e funcionalidades que podem incluir: [...]</p>
+
+        <h4>📊 4. Coleta e Uso de Dados</h4>
+        <p>O uso do bot implica na coleta de dados básicos como IDs de usuários [...]</p>
+
+        <h4>🚫 5. Condutas Proibidas</h4>
+        <p>Ao usar o Mine⭐, você concorda em não: [...]</p>
+
+        <h4>🛑 6. Cancelamento e Suspensão</h4>
+        <p>O acesso ao Mine⭐ pode ser suspenso ou encerrado: [...]</p>
+
+        <h4>🧪 7. Beta e Funcionalidades Experimentais</h4>
+        <p>Alguns recursos do Mine⭐ podem estar em fase beta [...]</p>
+
+        <h4>📎 8. Limitação de Responsabilidade</h4>
+        <p>O Mine⭐ é fornecido "como está" [...]</p>
+
+        <h4>🔄 9. Alterações neste Termo</h4>
+        <p>Podemos atualizar estes Termos a qualquer momento. [...]</p>
+
+        <h4>📞 10. Contato e Suporte</h4>
+        <p>🔗 (Em breve)</p>
+      </div>
+
+      <div id="privacy" class="tab-content">
+        <h3>🛡️ Política de Privacidade – Mine⭐</h3>
+        <p>Última atualização: 2 Junho de 2025</p>
+
+        <p>Obrigado por utilizar o Mine⭐, um bot do Discord desenvolvido para oferecer funcionalidades relacionadas a Minecraft [...]</p>
+
+        <h4>📌 1. Informações que Coletamos</h4>
+        <p>O Mine⭐ pode coletar os seguintes dados: [...]</p>
+
+        <h4>⚙️ 2. Como Utilizamos Seus Dados</h4>
+        <p>Utilizamos os dados coletados para: [...]</p>
+
+        <h4>🔐 3. Armazenamento e Segurança</h4>
+        <p>Os dados são armazenados em servidores protegidos [...]</p>
+
+        <h4>❌ 4. Compartilhamento de Dados</h4>
+        <p>Nós não vendemos, trocamos ou compartilhamos seus dados com terceiros [...]</p>
+
+        <h4>👤 5. Seus Direitos</h4>
+        <p>Você tem direito a: [...]</p>
+
+        <h4>🧒 6. Uso por Menores</h4>
+        <p>O bot deve ser utilizado apenas por usuários com idade mínima permitida [...]</p>
+
+        <h4>📞 7. Contato</h4>
+        <p>🔗 (Em breve)</p>
+
+        <h4>📄 8. Alterações nesta Política</h4>
+        <p>Podemos atualizar esta Política periodicamente [...]</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll(".tab-buttons button");
+    const contents = document.querySelectorAll(".tab-content");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        contents.forEach(c => c.classList.remove("active"));
+        document.getElementById(btn.getAttribute("data-tab")).classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
